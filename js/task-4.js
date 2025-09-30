@@ -12,5 +12,6 @@ function handleSubmit(event) {
         email: email,
         password: password
     }
+    console.log(user);
     form.reset();
 }

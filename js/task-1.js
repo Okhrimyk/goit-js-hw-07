@@ -1,6 +1,5 @@
 const catList = document.querySelector("#categories");
 const itemList = document.querySelectorAll(".item");
-const titleList = document.querySelectorAll(".item h2")
 console.log(`Number of categories: ${itemList.length}`);
 itemList.forEach(item => {
     const categoryName = item.querySelector("h2").textContent;
@@ -23,9 +22,8 @@ itemList.forEach(item => {
         item.style.padding = "0px";
         item.style.justifyContent ="center";
     })
-    titleList.forEach(item => {
-        item.style.margin = "16px 0"
-    })
+const title = item.querySelector("h2");
+title.style.margin = "16px 0"
 })
 itemList.forEach(item => {
 item.style.backgroundColor = "#f6f6fe";

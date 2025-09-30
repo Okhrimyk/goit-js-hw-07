@@ -1,9 +1,9 @@
-const widget = document.querySelector(".widget");
-const body = document.body
+const widget = document.querySelector(".change-color");
+const textColor = document.querySelector(".color")
 widget.addEventListener("click", () => {
   const color = getRandomHexColor();
-  body.style.backgroundColor = color;
-  widget.textContent = `Color: ${color}`
+  document.body.style.backgroundColor = color;
+  textColor.textContent = color;
 }
 );
 function getRandomHexColor() {
